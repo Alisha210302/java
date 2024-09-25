@@ -1,0 +1,44 @@
+// car
+
+public class Car {
+    private String make;
+    private String model;
+    private Dates purchasedate;
+
+    public Car(String make, String model, Dates d)
+    {
+        this.make = make;
+        this.model = model;
+        this.purchasedate = d;
+    }
+    public String toString()
+    {
+        return "Car Make- "+make+ ",Model- "+model + " Date:" +purchasedate;
+    }
+
+    public static void main(String[] args) {
+        Car car = new Car("Honda","City",new Dates(21,"Mar",2002));
+        System.out.println(car);
+    }
+}
+
+
+
+// Dates
+
+public class Dates {
+    private int day;
+    private String month;
+    private int year;
+    public  Dates(int day,String month , int year)
+    {
+        this.day = day;
+        this.month=month;
+        this.year = year;
+    }
+
+    public String toString()
+    {
+        return day+"/" +month + "/"+year;
+    }
+}
