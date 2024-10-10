@@ -1,0 +1,29 @@
+// Date Class
+
+public class Date {
+    // variable declaration
+    private int day;
+    private String month;
+    private int year;
+
+    // method declaration
+    public void setDate(int d, String m , int y){
+        day = d;
+        month = m;
+        year = y;
+    }
+    public void displayDate(){
+        System.out.println("Date:"+day+"/"+month+"/"+year);
+    }
+}
+
+
+// calender class
+
+public class Calender {
+    public static void main(String[] args) {
+        Date d = new Date();
+        d.setDate(12,"December",2000);
+        d.displayDate();
+    }
+}
